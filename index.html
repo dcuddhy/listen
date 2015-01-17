@@ -7,46 +7,44 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- <i class="fa fa-pause"></i> -->
-  <div class="container">
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-  </div>
-
-
-
+  Select a song!
+<br>
 
   <!-- Main -->
-  <div id="main">
+  <div class="container">
     <section class="player">
-
-
     </section>
   </div>
 
 
 
 
+
   <script type = "text/template" id="tracksTemplate">
-    {{#tracks}}
-    <article>
-      <h2>{{title}}</h2>
-      {{artist}}
-      {{file}}
-    </article>
-    {{/tracks}}
+      {{#tracks}}
+      <div>
+        <div class="ui segment">
+          <i class="fa fa-play">
+        <h2>{{title}} by {{artist}}</h2>
+          </i>
+        </div>
+      </div>
+      {{/tracks}}
   </script>
+
+  {{file}}
+
+
+
+<!--   <script type = "text/template" id="tracksTemplate">
+  {{#tracks}}
+  <article>
+    <h2>{{title}}</h2>
+    {{artist}}
+    {{file}}
+  </article>
+  {{/tracks}}
+</script> -->
 
 
 
