@@ -4,12 +4,12 @@ $( document ).ready(function() {
 
 
 $('.container').on('click', '.fa-play', function() {
-  $('.fa').removeClass('fa-pause').addClass('fa-play');
-  $(this).removeClass('fa-play').addClass('fa-pause');
+  $('.fa').removeClass('fa-stop').addClass('fa-play');
+  $(this).removeClass('fa-play').addClass('fa-stop');
 });
 
-$('.container').on('click', '.fa-pause', function() {
-  $(this).removeClass('fa-pause').addClass('fa-play');
+$('.container').on('click', '.fa-stop', function() {
+  $(this).removeClass('fa-stop').addClass('fa-play');
 });
 
 

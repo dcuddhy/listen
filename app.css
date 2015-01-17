@@ -1,7 +1,20 @@
-.fa {
-  font-size: 2rem;
+.full-container{
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius:3px;
 }
 
 h2{
   display: inline;
+}
+
+.ui .fa {
+  font-size: 1.5em;
 }

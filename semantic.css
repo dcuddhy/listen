@@ -7053,7 +7053,7 @@ i.icon.play:before {
   content: "\f04b";
 }
 
-i.icon.pause:before {
+i.icon.stop:before {
   content: "\f04c";
 }
 
@@ -28011,8 +28011,8 @@ html.ios {
 /* Disabled */
 
 .disabled.transition {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+  -webkit-animation-play-state: stopd;
+  animation-play-state: stopd;
 }
 
 /*******************************

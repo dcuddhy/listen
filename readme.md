@@ -2,8 +2,8 @@
 
 * Include jQuery from [CDN](https://cdnjs.com/libraries/jquery/)
 * Include font-awesome from [CDN](http://fortawesome.github.io/Font-Awesome/get-started/)
-* When a user clicks play, the play icon should be replaces with a pause icon.
-* When a user clicks a play icon, all other pause icons should be switched back to a play icon.
+* When a user clicks play, the play icon should be replaces with a stop icon.
+* When a user clicks a play icon, all other stop icons should be switched back to a play icon.
 
 ## Example:
 ![click buttons](img/example.gif)
