@@ -16,16 +16,35 @@ $( document ).ready(function() {
 
 
   $.getJSON('data.json', function(tracks) {
-
     var $tracksTemplate = $('#tracksTemplate').html();
-
     var newHTML = Mustache.to_html($tracksTemplate, tracks);
-
     $('.player').html(newHTML);
   });
 
+  $.getJSON('data.json', function(id) {
+    var $headerTemplate = $('#headerTemplate').html();
+    var newHTML = Mustache.to_html($headerTemplate, id);
+    $('.header').html(newHTML);
+  });
 
-    // WILL PAUSE A JAM
+  // 
+  // document.body.onload = addElement;
+  //
+  // function addElement () {
+  //   // create a new div element
+  //   // and give it some content
+  //   var newDiv = document.createElement("div");
+  //   var newContent = document.createTextNode("Hi there and greetings!");
+  //   newDiv.appendChild(newContent); //add the text node to the newly created div.
+  //
+  //   // add the newly created element and its content into the DOM
+  //   var currentDiv = document.getElementById("header");
+  //   document.body.insertBefore(newDiv, currentDiv);
+  // }
+
+
+
+      // WILL PAUSE A JAM
     // document.getElementById('jam').pause();
 
 

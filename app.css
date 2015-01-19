@@ -15,6 +15,10 @@ h2{
   display: inline;
 }
 
+.container .segment{
+  background: transparent;
+  }
+
 .ui .fa {
   font-size: 1.5em;
 }
