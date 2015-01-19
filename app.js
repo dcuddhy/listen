@@ -3,17 +3,19 @@ $( document ).ready(function() {
 
 
   $('.container').on('click', '.fa-play', function() {
-    document.getElementById('jam').play();
+    var id = $(this).data('id')
+    document.getElementById(id).play()
     $('.fa').removeClass('fa-stop').addClass('fa-play');
     $(this).removeClass('fa-play').addClass('fa-stop');
   });
+    // $(this).children("audio").trigger('play');
+    // $(this).children("audio").trigger('pause');
 
   $('.container').on('click', '.fa-stop', function() {
-    document.getElementById('jam').pause();
-    document.getElementById('jam').currentTime = 0;
+    var id = $(this).data('id')
+    document.getElementById(id).pause()
     $(this).removeClass('fa-stop').addClass('fa-play');
   });
-
 
   $.getJSON('data.json', function(tracks) {
     var $tracksTemplate = $('#tracksTemplate').html();
@@ -27,7 +29,23 @@ $( document ).ready(function() {
     $('.header').html(newHTML);
   });
 
-  // 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //
   // document.body.onload = addElement;
   //
   // function addElement () {

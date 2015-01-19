@@ -1,6 +1,9 @@
 # Find it live at:
 http://development.listendrewcuddhy.divshot.io/
 
+# Using demo as reference:
+http://development.listen.divshot.io/
+
 # jQuery
 
 * Include jQuery from [CDN](https://cdnjs.com/libraries/jquery/)
