@@ -13,10 +13,13 @@
 
 h2{
   display: inline;
+  padding: 0 0 0 8px;
 }
 
-.container .segment{
+.ui{
   background: transparent;
+  padding: 10px;
+  border-bottom:1px solid lightgrey;
   }
 
 .ui .fa {
