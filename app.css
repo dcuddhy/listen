@@ -1,15 +1,14 @@
 .full-container{
   width: 75%;
-  margin: 0 auto 0 auto;
+  margin: -30px auto 0 auto;
 }
 
-.headZ {
+.heading {
   background: black;
   color: white;
   text-align: center;
   padding: 14px;
   border-radius:3px;
-  
 }
 
 h2{
@@ -25,4 +24,8 @@ h2{
 
 .ui .fa {
   font-size: 1.5em;
+}
+
+.player {
+  margin: -30px 0 0 0;
 }
