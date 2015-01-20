@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
   $('.container').on('click', '.fa-stop', function() {
     var id = $(this).data('id')
-    document.getElementById(id).stop()
+    document.getElementById(id).pause()
     $(this).removeClass('fa-stop').addClass('fa-play');
     $('.headZ').html("Select a song!")
   });
