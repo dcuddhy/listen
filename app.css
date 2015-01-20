@@ -3,12 +3,13 @@
   margin: 0 auto 0 auto;
 }
 
-.header {
+.headZ {
   background: black;
   color: white;
   text-align: center;
   padding: 14px;
   border-radius:3px;
+  
 }
 
 h2{

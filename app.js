@@ -7,16 +7,15 @@ $( document ).ready(function() {
     document.getElementById(id).play()
     $('.fa').removeClass('fa-stop').addClass('fa-play');
     $(this).removeClass('fa-play').addClass('fa-stop');
+    var title = $(this).data('title')
+    $('.headZ').html("Now Playing: " + title )
   });
-
-    // $(this).children("audio").trigger('play');
-    // $(this).children("audio").trigger('pause');
 
   $('.container').on('click', '.fa-stop', function() {
     var id = $(this).data('id')
-    document.getElementById(id).pause()
-    // document.getElementById(id).currentTime = 0;  <<< Doesn't seem to work, STACK OVERFLOW!
+    document.getElementById(id).stop()
     $(this).removeClass('fa-stop').addClass('fa-play');
+    $('.headZ').html("Select a song!")
   });
 
   $.getJSON('data.json', function(tracks) {
@@ -35,6 +34,8 @@ $( document ).ready(function() {
 
 
 
+    // $(this).children("audio").trigger('play');
+    // $(this).children("audio").trigger('pause');
 
 
 
