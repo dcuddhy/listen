@@ -5,8 +5,11 @@ $( document ).ready(function() {
   // stop effect.  var title sends title to header.
   $('.container').on('click', '.fa-play', function() {
     var id = $(this).data('id');
+    $("audio").trigger('pause');
     document.getElementById(id).load();
     document.getElementById(id).play();
+
+
     $('.fa').removeClass('fa-stop').addClass('fa-play');
     $(this).removeClass('fa-play').addClass('fa-stop');
     var title = $(this).data('title');

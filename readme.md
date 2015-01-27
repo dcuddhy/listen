@@ -26,5 +26,5 @@ http://development.listen.divshot.io/
 
 ## Server
 1. In the terminal, `cd` into the puck directory
-1. Run `python -m SimpleHTTPServer` to start a server
+1. Run `python -m SimpleHTTPServer` or 'http-server' to start a server
 1. Visit localhost:8000 to see the index page
